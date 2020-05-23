@@ -30,7 +30,7 @@ let token = "";
 if (fs.existsSync(keyPath)) {
     keys = require(keyPath).installed;
 }
-const redirectUrl = (process.env.NODE_ENV === 'production') ? keys.redirect_uris[2] : keys.redirect_uris[1]
+const redirectUrl = (process.env.NODE_ENV === 'production') ? keys.redirect_uris[0] : keys.redirect_uris[1]
 
 
 /**
