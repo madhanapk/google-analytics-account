@@ -1,0 +1,15 @@
+{
+    "installed": {
+        "client_id": "849281872649-2trmore227totnvu4b5njb8br10gk1do.apps.googleusercontent.com",
+        "project_id": "analytics-manage-accounts",
+        "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+        "token_uri": "https://oauth2.googleapis.com/token",
+        "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+        "client_secret": "fltKvQZHnNAeXOv3Wo6LC_Ca",
+        "redirect_uris": [
+            "urn:ietf:wg:oauth:2.0:oob",
+            "http://localhost:8080/callbackredirect",
+            "https://google-analytics-account.herokuapp.com/callbackredirect"
+        ]
+    }
+}
