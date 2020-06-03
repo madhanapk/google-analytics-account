@@ -20,6 +20,7 @@ const app = express();
 const { google } = require('googleapis');
 const port = process.env.PORT || 8080;
 const analytics = google.analytics('v3');
+const keyFile = require('./service-key.json');
 
 /**
  * Create a new OAuth2 client with the configured keys.
@@ -39,9 +40,12 @@ app.set('view engine', 'pug')
 
 const googleAuth = new google.auth.GoogleAuth({
     // Scopes can be specified either as an array or as a single, space-delimited string.
-    keyFile: './service-key.json',
+    //keyFile: './service-key.json',
+	//...keyFile,
+	credentials:keyFile,
     scopes: ['https://www.googleapis.com/auth/analytics']
 });
+console.log(googleAuth);
 google.options({auth:googleAuth})
 
 /**
